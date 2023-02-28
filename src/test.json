@@ -1,0 +1,614 @@
+[
+  {
+    "state": "AK",
+    "weather": {
+      "Mon": "31",
+      "Tue": "18",
+      "Wed": "23",
+      "Thu": "21",
+      "Fri": "17",
+      "Sat": "15",
+      "Sun": "23"
+    }
+  },
+  {
+    "state": "AL",
+    "weather": {
+      "Mon": "69",
+      "Tue": "77",
+      "Wed": "78",
+      "Thu": "75",
+      "Fri": "69",
+      "Sat": "63",
+      "Sun": "62"
+    }
+  },
+  {
+    "state": "AR",
+    "weather": {
+      "Mon": "70",
+      "Tue": "79",
+      "Wed": "74",
+      "Thu": "64",
+      "Fri": "55",
+      "Sat": "60",
+      "Sun": "62"
+    }
+  },
+  {
+    "state": "AZ",
+    "weather": {
+      "Mon": "67",
+      "Tue": "65",
+      "Wed": "62",
+      "Thu": "61",
+      "Fri": "63",
+      "Sat": "70",
+      "Sun": "75"
+    }
+  },
+  {
+    "state": "CA",
+    "weather": {
+      "Mon": "57",
+      "Tue": "56",
+      "Wed": "53",
+      "Thu": "60",
+      "Fri": "64",
+      "Sat": "65",
+      "Sun": "61"
+    }
+  },
+  {
+    "state": "CO",
+    "weather": {
+      "Mon": "49",
+      "Tue": "47",
+      "Wed": "40",
+      "Thu": "40",
+      "Fri": "44",
+      "Sat": "42",
+      "Sun": "52"
+    }
+  },
+  {
+    "state": "CT",
+    "weather": {
+      "Mon": "42",
+      "Tue": "38",
+      "Wed": "45",
+      "Thu": "51",
+      "Fri": "40",
+      "Sat": "38",
+      "Sun": "41"
+    }
+  },
+  {
+    "state": "DC",
+    "weather": {
+      "Mon": "55",
+      "Tue": "61",
+      "Wed": "63",
+      "Thu": "68",
+      "Fri": "48",
+      "Sat": "52",
+      "Sun": "49"
+    }
+  },
+  {
+    "state": "DE",
+    "weather": {
+      "Mon": "51",
+      "Tue": "47",
+      "Wed": "53",
+      "Thu": "62",
+      "Fri": "42",
+      "Sat": "47",
+      "Sun": "46"
+    }
+  },
+  {
+    "state": "FL",
+    "weather": {
+      "Mon": "79",
+      "Tue": "85",
+      "Wed": "84",
+      "Thu": "82",
+      "Fri": "84",
+      "Sat": "86",
+      "Sun": "85"
+    }
+  },
+  {
+    "state": "GA",
+    "weather": {
+      "Mon": "67",
+      "Tue": "78",
+      "Wed": "78",
+      "Thu": "76",
+      "Fri": "75",
+      "Sat": "65",
+      "Sun": "63"
+    }
+  },
+  {
+    "state": "HI",
+    "weather": {
+      "Mon": "78",
+      "Tue": "78",
+      "Wed": "77",
+      "Thu": "77",
+      "Fri": "77",
+      "Sat": "79",
+      "Sun": "79"
+    }
+  },
+  {
+    "state": "IA",
+    "weather": {
+      "Mon": "53",
+      "Tue": "49",
+      "Wed": "53",
+      "Thu": "43",
+      "Fri": "42",
+      "Sat": "47",
+      "Sun": "53"
+    }
+  },
+  {
+    "state": "ID",
+    "weather": {
+      "Mon": "43",
+      "Tue": "40",
+      "Wed": "44",
+      "Thu": "41",
+      "Fri": "42",
+      "Sat": "41",
+      "Sun": "43"
+    }
+  },
+  {
+    "state": "IL",
+    "weather": {
+      "Mon": "47",
+      "Tue": "43",
+      "Wed": "47",
+      "Thu": "37",
+      "Fri": "36",
+      "Sat": "38",
+      "Sun": "42"
+    }
+  },
+  {
+    "state": "IN",
+    "weather": {
+      "Mon": "57",
+      "Tue": "54",
+      "Wed": "69",
+      "Thu": "54",
+      "Fri": "47",
+      "Sat": "44",
+      "Sun": "50"
+    }
+  },
+  {
+    "state": "KS",
+    "weather": {
+      "Mon": "68",
+      "Tue": "68",
+      "Wed": "59",
+      "Thu": "44",
+      "Fri": "48",
+      "Sat": "51",
+      "Sun": "60"
+    }
+  },
+  {
+    "state": "KY",
+    "weather": {
+      "Mon": "64",
+      "Tue": "62",
+      "Wed": "76",
+      "Thu": "62",
+      "Fri": "60",
+      "Sat": "51",
+      "Sun": "56"
+    }
+  },
+  {
+    "state": "LA",
+    "weather": {
+      "Mon": "57",
+      "Tue": "56",
+      "Wed": "53",
+      "Thu": "60",
+      "Fri": "64",
+      "Sat": "65",
+      "Sun": "61"
+    }
+  },
+  {
+    "state": "MA",
+    "weather": {
+      "Mon": "40",
+      "Tue": "37",
+      "Wed": "44",
+      "Thu": "49",
+      "Fri": "37",
+      "Sat": "35",
+      "Sun": "37"
+    }
+  },
+  {
+    "state": "MD",
+    "weather": {
+      "Mon": "54",
+      "Tue": "56",
+      "Wed": "57",
+      "Thu": "66",
+      "Fri": "46",
+      "Sat": "51",
+      "Sun": "49"
+    }
+  },
+  {
+    "state": "ME",
+    "weather": {
+      "Mon": "37",
+      "Tue": "35",
+      "Wed": "40",
+      "Thu": "43",
+      "Fri": "37",
+      "Sat": "28",
+      "Sun": "35"
+    }
+  },
+  {
+    "state": "MI",
+    "weather": {
+      "Mon": "44",
+      "Tue": "47",
+      "Wed": "51",
+      "Thu": "41",
+      "Fri": "35",
+      "Sat": "36",
+      "Sun": "42"
+    }
+  },
+  {
+    "state": "MN",
+    "weather": {
+      "Mon": "39",
+      "Tue": "36",
+      "Wed": "33",
+      "Thu": "31",
+      "Fri": "34",
+      "Sat": "35",
+      "Sun": "38"
+    }
+  },
+  {
+    "state": "MO",
+    "weather": {
+      "Mon": "64",
+      "Tue": "62",
+      "Wed": "58",
+      "Thu": "46",
+      "Fri": "42",
+      "Sat": "48",
+      "Sun": "57"
+    }
+  },
+  {
+    "state": "MS",
+    "weather": {
+      "Mon": "77",
+      "Tue": "83",
+      "Wed": "84",
+      "Thu": "84",
+      "Fri": "67",
+      "Sat": "67",
+      "Sun": "69"
+    }
+  },
+  {
+    "state": "MT",
+    "weather": {
+      "Mon": "45",
+      "Tue": "39",
+      "Wed": "47",
+      "Thu": "54",
+      "Fri": "38",
+      "Sat": "42",
+      "Sun": "42"
+    }
+  },
+  {
+    "state": "NC",
+    "weather": {
+      "Mon": "64",
+      "Tue": "78",
+      "Wed": "78",
+      "Thu": "79",
+      "Fri": "77",
+      "Sat": "69",
+      "Sun": "61"
+    }
+  },
+  {
+    "state": "ND",
+    "weather": {
+      "Mon": "31",
+      "Tue": "27",
+      "Wed": "15",
+      "Thu": "17",
+      "Fri": "29",
+      "Sat": "307",
+      "Sun": "32"
+    }
+  },
+  {
+    "state": "NE",
+    "weather": {
+      "Mon": "55",
+      "Tue": "46",
+      "Wed": "47",
+      "Thu": "40",
+      "Fri": "42",
+      "Sat": "44",
+      "Sun": "52"
+    }
+  },
+  {
+    "state": "NH",
+    "weather": {
+      "Mon": "38",
+      "Tue": "35",
+      "Wed": "44",
+      "Thu": "46",
+      "Fri": "37",
+      "Sat": "32",
+      "Sun": "38"
+    }
+  },
+  {
+    "state": "NJ",
+    "weather": {
+      "Mon": "46",
+      "Tue": "39",
+      "Wed": "46",
+      "Thu": "55",
+      "Fri": "37",
+      "Sat": "41",
+      "Sun": "43"
+    }
+  },
+  {
+    "state": "NM",
+    "weather": {
+      "Mon": "50",
+      "Tue": "43",
+      "Wed": "43",
+      "Thu": "35",
+      "Fri": "39",
+      "Sat": "40",
+      "Sun": "50"
+    }
+  },
+  {
+    "state": "NV",
+    "weather": {
+      "Mon": "60",
+      "Tue": "55",
+      "Wed": "48",
+      "Thu": "56",
+      "Fri": "58",
+      "Sat": "61",
+      "Sun": "65"
+    }
+  },
+  {
+    "state": "NY",
+    "weather": {
+      "Mon": "46",
+      "Tue": "40",
+      "Wed": "47",
+      "Thu": "55",
+      "Fri": "39",
+      "Sat": "43",
+      "Sun": "44"
+    }
+  },
+  {
+    "state": "OH",
+    "weather": {
+      "Mon": "57",
+      "Tue": "50",
+      "Wed": "70",
+      "Thu": "55",
+      "Fri": "53",
+      "Sat": "41",
+      "Sun": "48"
+    }
+  },
+  {
+    "state": "OK",
+    "weather": {
+      "Mon": "70",
+      "Tue": "76",
+      "Wed": "63",
+      "Thu": "61",
+      "Fri": "51",
+      "Sat": "53",
+      "Sun": "63"
+    }
+  },
+  {
+    "state": "OR",
+    "weather": {
+      "Mon": "45",
+      "Tue": "39",
+      "Wed": "47",
+      "Thu": "54",
+      "Fri": "38",
+      "Sat": "42",
+      "Sun": "42"
+    }
+  },
+  {
+    "state": "PA",
+    "weather": {
+      "Mon": "50",
+      "Tue": "45",
+      "Wed": "55",
+      "Thu": "61",
+      "Fri": "42",
+      "Sat": "46",
+      "Sun": "45"
+    }
+  },
+  {
+    "state": "RI",
+    "weather": {
+      "Mon": "41",
+      "Tue": "37",
+      "Wed": "45",
+      "Thu": "52",
+      "Fri": "40",
+      "Sat": "35",
+      "Sun": "39"
+    }
+  },
+  {
+    "state": "SC",
+    "weather": {
+      "Mon": "67",
+      "Tue": "82",
+      "Wed": "83",
+      "Thu": "82",
+      "Fri": "84",
+      "Sat": "73",
+      "Sun": "66"
+    }
+  },
+  {
+    "state": "SD",
+    "weather": {
+      "Mon": "58",
+      "Tue": "59",
+      "Wed": "56",
+      "Thu": "59",
+      "Fri": "62",
+      "Sat": "63",
+      "Sun": "61"
+    }
+  },
+  {
+    "state": "TN",
+    "weather": {
+      "Mon": "69",
+      "Tue": "74",
+      "Wed": "80",
+      "Thu": "68",
+      "Fri": "65",
+      "Sat": "55",
+      "Sun": "58"
+    }
+  },
+  {
+    "state": "TX",
+    "weather": {
+      "Mon": "77",
+      "Tue": "84",
+      "Wed": "81",
+      "Thu": "80",
+      "Fri": "68",
+      "Sat": "76",
+      "Sun": "73"
+    }
+  },
+  {
+    "state": "UT",
+    "weather": {
+      "Mon": "38",
+      "Tue": "37",
+      "Wed": "36",
+      "Thu": "34",
+      "Fri": "32",
+      "Sat": "41",
+      "Sun": "40"
+    }
+  },
+  {
+    "state": "VA",
+    "weather": {
+      "Mon": "59",
+      "Tue": "73",
+      "Wed": "70",
+      "Thu": "75",
+      "Fri": "60",
+      "Sat": "64",
+      "Sun": "56"
+    }
+  },
+  {
+    "state": "VT",
+    "weather": {
+      "Mon": "36",
+      "Tue": "36",
+      "Wed": "40",
+      "Thu": "37",
+      "Fri": "29",
+      "Sat": "31",
+      "Sun": "35"
+    }
+  },
+  {
+    "state": "WA",
+    "weather": {
+      "Mon": "47",
+      "Tue": "41",
+      "Wed": "44",
+      "Thu": "44",
+      "Fri": "45",
+      "Sat": "45",
+      "Sun": "46"
+    }
+  },
+  {
+    "state": "WI",
+    "weather": {
+      "Mon": "47",
+      "Tue": "44",
+      "Wed": "43",
+      "Thu": "36",
+      "Fri": "36",
+      "Sat": "41",
+      "Sun": "43"
+    }
+  },
+  {
+    "state": "WV",
+    "weather": {
+      "Mon": "61",
+      "Tue": "57",
+      "Wed": "76",
+      "Thu": "64",
+      "Fri": "68",
+      "Sat": "48",
+      "Sun": "52"
+    }
+  },
+  {
+    "state": "WY",
+    "weather": {
+      "Mon": "44",
+      "Tue": "39",
+      "Wed": "31",
+      "Thu": "36",
+      "Fri": "35",
+      "Sat": "34",
+      "Sun": "47"
+    }
+  }
+]
