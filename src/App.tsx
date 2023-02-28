@@ -1,40 +1,60 @@
-import { useState } from 'react'
-import data from './test.json';
-import './App.css'
+import { useState, useEffect } from "react";
+import "./App.css";
+import Spinner from "./component/Spinner";
+import Weather from "./component/Weather";
+import { createClient } from "@supabase/supabase-js";
 
 function App() {
-  const [currentState, setCurrentState] = useState({
-    state:'ny',
-    day:'Mon',
-    weather:"31\u00b0"
-  });
+  const [weatherData, setWeatherData] = useState<any>();
+  const [isLoading, setIsLoading] = useState<boolean>(false);
+  const supabaseUrl = "https://jwabetvamhrditzxtffd.supabase.co";
+  const supabaseKey = import.meta.env.VITE_SUPABASE_KEY;
+  const supabase = createClient(supabaseUrl, supabaseKey);
+  const d = new Date("July 21, 1983 01:15:00");
+  let day = d.getDay();
+  const weekday = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"];
 
-  const [filter,setFilter] = useState<string>('')
+  useEffect(() => {
+    const getData = async () => {
+      setIsLoading(true);
+      const { data, error }: any = await supabase.from("weather").select();
+      setWeatherData(data[0].weather);
+      setIsLoading(false);
+    };
+    getData();
+  }, []);
 
   return (
     <div className="bg-neutral-700 w-screen h-screen relative flex items-center justify-center overflow-hidden">
-      <div className='w-[390px] h-full bg-gradient-to-bl from-sky-400 to-sky-200 rounded overflow-auto flex flex-col gap-6 px-10'>
-        <input onChange={(e) => setFilter(e.target.value)} type="text" className='px-4 py-2 mt-10 mb-5 rounded-lg sticky top-0 z-50 outline-none text-2xl' placeholder='Search for State' />
-        {
-          data.filter(el => el.state.toLowerCase().includes(filter.toLowerCase())).map(el => {
-            return(
-              <div className='flex items-end justify-between'>
-                <div className='flex gap-4 items-end '>
-                  <p className='text-2xl font-bold'>
-                    {el.state}
-                  </p>
-                  <p className={`${parseInt(el.weather.Mon) > 60 ? 'text-red-400': 'text-sky-600'} font-semibold`}>{parseInt(el.weather.Mon) > 60 ? 'Ice': 'No Ice'}</p>
-                </div>
-                <p className='text-6xl'>{`${el.weather.Mon}\u00b0F`}</p>
-              </div>
-            )
-          })
-        }
+      <div
+        className={`w-[390px] h-full bg-gradient-to-bl from-sky-400 to-sky-200 rounded overflow-auto flex flex-col gap-6 px-10 py-6 ${
+          isLoading ? "items-center justify-center" : ""
+        }`}
+      >
+        <h1 className="text-2xl text-center font-bold">La Maison Du Chocolat Shipping Weather Forcast</h1>
+        {isLoading ? (
+          <Spinner />
+        ) : (
+          <div className="">
+            {weatherData ? (
+              weatherData.map((el: any) => {
+                return (
+                  <Weather
+                    key={el.state}
+                    day={weekday[day]}
+                    state={el.state}
+                    weather={el.weather}
+                  />
+                );
+              })
+            ) : (
+              <></>
+            )}
+          </div>
+        )}
       </div>
     </div>
-  )
+  );
 }
 
-export default App
-
-// \u000b0
+export default App;
