@@ -17,7 +17,8 @@ function App() {
   useEffect(() => {
     const getData = async () => {
       setIsLoading(true);
-      const { data, error }: any = await supabase.from("weather").select();
+      const { data, error }: any = await supabase.from("weather").select().limit(1).order('id',{ascending: false});
+      console.log(data);
       setWeatherData(data[0].weather);
       setIsLoading(false);
     };
