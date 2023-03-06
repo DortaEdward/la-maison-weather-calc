@@ -10,15 +10,17 @@ function App() {
   const supabaseUrl = "https://jwabetvamhrditzxtffd.supabase.co";
   const supabaseKey = import.meta.env.VITE_SUPABASE_KEY;
   const supabase = createClient(supabaseUrl, supabaseKey);
-  const d = new Date("July 21, 1983 01:15:00");
-  let day = d.getDay();
+
+  var tomorrow = new Date();
+  tomorrow.setDate(tomorrow.getDate()+1);
+  const day = tomorrow.getDay()
   const weekday = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"];
 
   useEffect(() => {
     const getData = async () => {
       setIsLoading(true);
       const { data, error }: any = await supabase.from("weather").select().limit(1).order('id',{ascending: false});
-      console.log(data);
+      console.log(typeof(data[0].weather));
       setWeatherData(data[0].weather);
       setIsLoading(false);
     };
