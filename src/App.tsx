@@ -26,7 +26,6 @@ function App() {
         .select()
         .limit(1)
         .order("id", { ascending: false });
-      console.log(typeof data[0].weather);
       setWeatherData(data[0].weather);
       setIsLoading(false);
     };
