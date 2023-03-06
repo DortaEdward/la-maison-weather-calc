@@ -7,7 +7,7 @@ import { createClient } from "@supabase/supabase-js";
 function App() {
   const [weatherData, setWeatherData] = useState<any>();
   const [isLoading, setIsLoading] = useState<boolean>(false);
-  const [searchTerm, setSearchTerm] = useState<string>();
+  const [searchTerm, setSearchTerm] = useState<string>('');
 
   const supabaseUrl = "https://jwabetvamhrditzxtffd.supabase.co";
   const supabaseKey = import.meta.env.VITE_SUPABASE_KEY;
@@ -49,7 +49,6 @@ function App() {
             <input type="text" onChange={(e: any) => setSearchTerm(e.target.value)} placeholder="Search..." className="my-2 p-2 rounded w-full" />
             {weatherData ? (
               weatherData.filter((state: any) => state.state.toLowerCase().includes(searchTerm?.toLowerCase())).map((el: any) => {
-                console.log(el)
                 return (
                   <Weather
                     key={el.state}
