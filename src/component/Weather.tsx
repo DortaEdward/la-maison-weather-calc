@@ -25,7 +25,7 @@ const Weather = ({ state, weather, day }: Props) => {
   }, []);
   
   return (
-    <div className="shadow-md w-full p-4 rounded-lg">
+    <div className="shadow-md w-5/6 p-4 rounded-lg">
       <div className="flex items-end justify-between">
         <div className="flex gap-4 items-end">
           <p className="text-2xl font-bold">{state}</p>

@@ -61,7 +61,7 @@ function App() {
         {isLoading ? (
           <Spinner />
         ) : (
-          <div className="flex flex-col gap-2 w-full">
+          <div className="flex flex-col items-center gap-2 w-full">
             {weatherData ? (
               weatherData
                 .filter((state: any) =>
