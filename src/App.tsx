@@ -35,11 +35,11 @@ function App() {
   return (
     <div className="bg-gradient-to-b from-gray-100 to-gray-50 w-screen h-screen relative flex items-center justify-center overflow-hidden">
       <div
-        className={`min-w-[390px] w-full h-full  rounded overflow-auto flex flex-col gap-6 px-10 py-6 ${
+        className={`min-w-[390px] w-full h-full  rounded overflow-auto flex flex-col gap-6 px-10 pb-6 relative ${
           isLoading ? "items-center justify-center" : ""
         }`}
       >
-        <div className="flex flex-col items-center justify-center">
+        <div className="flex flex-col items-center justify-center sticky top-0 bg-gray-100 pt-6">
           <img
             src="logo.png"
             alt="La Maison Du Chocolat Logo"
@@ -51,17 +51,17 @@ function App() {
           <p className="text-neutral-700 text-lg font-medium drop-shadow-lg">
             Shipping Weather Forcast
           </p>
+          <input
+            type="text"
+            onChange={(e: any) => setSearchTerm(e.target.value)}
+            placeholder="Search..."
+            className="my-2 p-2 rounded w-full outline-none border-none"
+          />
         </div>
         {isLoading ? (
           <Spinner />
         ) : (
           <div className="flex flex-col gap-2 w-full">
-            <input
-              type="text"
-              onChange={(e: any) => setSearchTerm(e.target.value)}
-              placeholder="Search..."
-              className="my-2 p-2 rounded w-full"
-            />
             {weatherData ? (
               weatherData
                 .filter((state: any) =>

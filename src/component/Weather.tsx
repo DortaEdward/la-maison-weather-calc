@@ -23,6 +23,7 @@ const Weather = ({ state, weather, day }: Props) => {
       console.log(error.message);
     }
   }, []);
+  
   return (
     <div className="shadow-md w-full p-4 rounded-lg">
       <div className="flex items-end justify-between">
