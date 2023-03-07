@@ -49,7 +49,7 @@ function App() {
             La Maison Du Chocolat
           </h1>
           <p className="text-neutral-700 text-lg font-medium drop-shadow-lg">
-            Shipping Weather Forcast
+            Shipping Weather Forecast
           </p>
           <input
             type="text"
