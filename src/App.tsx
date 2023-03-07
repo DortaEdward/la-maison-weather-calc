@@ -33,9 +33,9 @@ function App() {
   }, []);
 
   return (
-    <div className="bg-neutral-700 w-screen h-screen relative flex items-center justify-center overflow-hidden">
+    <div className="w-screen h-screen relative flex items-center justify-center overflow-hidden">
       <div
-        className={`min-w-[390px] w-full h-full bg-gradient-to-b from-sky-400 to-sky-100 rounded overflow-auto flex flex-col gap-6 px-10 py-6 ${
+        className={`min-w-[390px] w-full h-full bg-gradient-to-b from-gray-100 to-gray-50 rounded overflow-auto flex flex-col gap-6 px-10 py-6 ${
           isLoading ? "items-center justify-center" : ""
         }`}
       >
@@ -48,7 +48,7 @@ function App() {
           <h1 className="text-2xl text-center font-bold text-[rgb(82,39,26)] drop-shadow-lg">
             La Maison Du Chocolat
           </h1>
-          <p className="text-gray-100 text-lg font-medium drop-shadow-lg">Shipping Weather Forcast</p>
+          <p className="text-neutral-700 text-lg font-medium drop-shadow-lg">Shipping Weather Forcast</p>
         </div>
         {isLoading ? (
           <Spinner />
