@@ -13,7 +13,6 @@ const Weather = ({ state, weather, day }: Props) => {
   useEffect(() => {
     try {
       const keys = Object.keys(weather);
-      // get index of current day
       const dayIndex = keys.indexOf(day);
       let temp = parseInt(weather[keys[dayIndex]].replace("°", "").slice(0, 2));
       setTemp(temp);
