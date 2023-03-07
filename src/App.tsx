@@ -45,7 +45,7 @@ function App() {
         {isLoading ? (
           <Spinner />
         ) : (
-          <div className="">
+          <div className="flex flex-col gap-10">
             <input type="text" onChange={(e: any) => setSearchTerm(e.target.value)} placeholder="Search..." className="my-2 p-2 rounded w-full" />
             {weatherData ? (
               weatherData.filter((state: any) => state.state.toLowerCase().includes(searchTerm?.toLowerCase())).map((el: any) => {

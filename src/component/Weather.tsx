@@ -8,12 +8,14 @@ type Props = {
 
 const Weather = ({ state, weather, day }: Props) => {
   const [temp, setTemp] = useState<number>();
+  const coldStyle = "bg-gradient-to-tr from-blue-900 to-blue-500";
+  const hotStyle = "bg-gradient-to-tr from-red-900 to-red-500";
   useEffect(() => {
     try {
       const keys = Object.keys(weather);
       // get index of current day
       const dayIndex = keys.indexOf(day);
-      let temp = parseInt(weather[keys[dayIndex]].replace("°", "").slice(0,2));
+      let temp = parseInt(weather[keys[dayIndex]].replace("°", "").slice(0, 2));
       setTemp(temp);
     } catch (error: any) {
       console.log(error.message);
@@ -22,7 +24,7 @@ const Weather = ({ state, weather, day }: Props) => {
   return (
     <div>
       <div className="flex items-end justify-between">
-        <div className="flex gap-4 items-end ">
+        <div className="flex gap-4 items-end">
           <p className="text-2xl font-bold">{state}</p>
 
           {temp && (
@@ -35,7 +37,15 @@ const Weather = ({ state, weather, day }: Props) => {
             </p>
           )}
         </div>
-        <p className="text-6xl">{temp}°F</p>
+        {temp && (
+          <p
+            className={`${
+              temp > 60 ? hotStyle : coldStyle
+            } text-6xl text-transparent bg-clip-text`}
+          >
+            {temp}°F
+          </p>
+        )}
       </div>
     </div>
   );
