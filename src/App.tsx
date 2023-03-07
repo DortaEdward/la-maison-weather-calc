@@ -7,7 +7,7 @@ import { createClient } from "@supabase/supabase-js";
 function App() {
   const [weatherData, setWeatherData] = useState<any>();
   const [isLoading, setIsLoading] = useState<boolean>(false);
-  const [searchTerm, setSearchTerm] = useState<string>('');
+  const [searchTerm, setSearchTerm] = useState<string>("");
 
   const supabaseUrl = "https://jwabetvamhrditzxtffd.supabase.co";
   const supabaseKey = import.meta.env.VITE_SUPABASE_KEY;
@@ -35,29 +35,38 @@ function App() {
   return (
     <div className="bg-neutral-700 w-screen h-screen relative flex items-center justify-center overflow-hidden">
       <div
-        className={`min-w-[390px] h-full bg-gradient-to-bl from-sky-400 to-sky-200 rounded overflow-auto flex flex-col gap-6 px-10 py-6 ${
+        className={`min-w-[390px] w-full h-full bg-gradient-to-bl from-sky-400 to-sky-200 rounded overflow-auto flex flex-col gap-6 px-10 py-6 ${
           isLoading ? "items-center justify-center" : ""
         }`}
       >
-        <h1 className="text-2xl text-center font-bold">
-          La Maison Du Chocolat Shipping Weather Forcast
+        <h1 className="text-2xl text-center font-bold text-amber-900">
+          La Maison Du Chocolat <br /> <span className="text-gray-100">Shipping Weather Forcast</span>
         </h1>
         {isLoading ? (
           <Spinner />
         ) : (
-          <div className="flex flex-col gap-10">
-            <input type="text" onChange={(e: any) => setSearchTerm(e.target.value)} placeholder="Search..." className="my-2 p-2 rounded w-full" />
+          <div className="flex flex-col gap-2 w-full">
+            <input
+              type="text"
+              onChange={(e: any) => setSearchTerm(e.target.value)}
+              placeholder="Search..."
+              className="my-2 p-2 rounded w-full"
+            />
             {weatherData ? (
-              weatherData.filter((state: any) => state.state.toLowerCase().includes(searchTerm?.toLowerCase())).map((el: any) => {
-                return (
-                  <Weather
-                    key={el.state}
-                    day={weekday[day]}
-                    state={el.state}
-                    weather={el.weather}
-                  />
-                );
-              })
+              weatherData
+                .filter((state: any) =>
+                  state.state.toLowerCase().includes(searchTerm?.toLowerCase())
+                )
+                .map((el: any) => {
+                  return (
+                    <Weather
+                      key={el.state}
+                      day={weekday[day]}
+                      state={el.state}
+                      weather={el.weather}
+                    />
+                  );
+                })
             ) : (
               <></>
             )}
